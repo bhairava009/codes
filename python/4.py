@@ -7,6 +7,7 @@ class Student:
     def get_result(self):
         return "Pass" if self.marks >= 40 else "Fail"
 
+# funtions
 student1 = Student("ram", 1, 85)
 student2 = Student("ravi", 2, 30)
 student3 = Student("Champa", 3, 50)
