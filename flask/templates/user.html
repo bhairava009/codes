@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>User Page</title></head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <!-- <h1>Hello, {{ username }}!</h1> -->
+    {% if name == "Shaurya" %}
+        <p>Welcome back, Shaurya!</p>
+        <img src="{{ url_for('static', filename='me.jpg') }}" alt="My Profile"
+     class="profile-image">
+    {% else %}
+        <p>Hello, {{name}}!</p>
+
+</body>
+</html>
+
