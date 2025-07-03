@@ -1,0 +1,174 @@
+
+
+/* ---------------  GLOBAL RESET & BASE --------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #fdfcfb;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ---------------  MAIN HEADING --------------- */
+h1 {
+  text-align: center;
+  color: #d51a1a;          /* deep violet */
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+}
+
+/* ---------------  OUTER ORDERED LIST --------------- */
+ol {
+  list-style: none;        /* remove default numbers */
+  counter-reset: jyotir;   /* start custom counter */
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+ol > li {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* round numbered badge */
+ol > li::before {
+  counter-increment: jyotir;
+  content: counter(jyotir);
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: #ff7043;     /* orange accent */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+/* ---------------  INNER UL (location + image) --------------- */
+ol ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+ol ul li {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* image styling */
+ol img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+ol img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------------  RESPONSIVE LAYOUT --------------- */
+@media (min-width: 600px) {
+  /* put location + image side-by-side */
+  ol ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  ol ul li {
+    flex: 1 1 35%;
+    margin: 0;
+  }
+
+  ol img {
+    flex: 1 1 65%;
+    margin: 0;
+  }
+}
+
+/* ---------------  VIDEO --------------- */
+video {
+  display: block;
+  margin: 0 auto 40px;
+  border: 3px solid #4b2e83;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* 
+  ========== GLOBAL RESET & BASE ==========
+  This section resets default styles and applies base layout styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #fdfcfb;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* 
+  ========== MAIN HEADING ==========
+  Styling for the main page title
+*/
+h1 {
+  text-align: center;
+  color: #f50d0d;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+}
+
+/* 
+  ========== IMAGE STYLING ==========
+  Add padding and hover effect
+*/
+ol img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+ol img:hover {
+  transform: scale(1.03);
+}
+
+/*
+  ========== VIDEO STYLING ==========
+  Center video and add border
+*/
+video {
+  display: block;
+  margin: 0 auto 60px;
+  border: 6px solid #4b2e83;
+  border-radius: 10px;
+}

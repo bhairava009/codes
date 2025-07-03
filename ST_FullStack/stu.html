@@ -1,0 +1,40 @@
+<form action="https://formspree.io/f/meokpebg" method="POST">
+  <h2>Student Details Form</h2>
+
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="Full Name" required><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="Email" required><br><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="Phone" pattern="[0-9]{10}" required><br><br>
+
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="Gender" required>
+    <option value="" disabled selected>Select</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select><br><br>
+
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="Date of Birth" required><br><br>
+
+  <label for="course">Course:</label><br>
+  <input type="text" id="course" name="Course" required><br><br>
+
+  <label for="year">Year:</label><br>
+  <select id="year" name="Year" required>
+    <option value="" disabled selected>Select</option>
+    <option value="1st Year">1st Year</option>
+    <option value="2nd Year">2nd Year</option>
+    <option value="3rd Year">3rd Year</option>
+    <option value="4th Year">4th Year</option>
+  </select><br><br>
+
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="Address" rows="3" required></textarea><br><br>
+
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,36 @@
+/* Global styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Outer container styling */
+#outer_container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Inner blocks */
+.inner_container {
+  width: 200px;
+  height: 150px;
+  background-color: #bee4e7;
+  border: 2px solid #70dcd0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: ;
+}
+
+/* Optional hover effect */
+.inner_container:hover {
+  transform: scale(1.05);
+  background-color:rgb(131, 64, 225)
+}

@@ -1,0 +1,100 @@
+ body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width:100vw;
+      background-color: #e3f2fd; /* Light blue background */
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+ .container {
+    background-color:rgb(204, 206, 206) ;
+    height:100%;
+      width:100%;
+      display: flex;
+      padding: 0.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+.animation_element {
+      height: 50%;
+      width: 50%;
+      background-color: #1fabd6;
+      color: black;
+      border: 0.2rem solid rgb(20, 19, 19);
+      border-radius: 8px;
+      display: flex;
+      align-items: last baseline;
+      justify-content: center;
+      animation-name: fade;
+        position: absolute;   /* position it */
+        top: 0;
+        left: 0;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+        animation-play-state: running; /* Can be paused by changing to paused */
+
+    }
+@keyframes fade {
+    0%{
+        opacity:1;
+
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+    }
+
+    
+}
+.animation_element2 {
+  height: 50%;
+  width: 50%;
+  margin: 0 0.5rem;
+  background-color: #d38888;
+  color: black;
+  border: 0.2rem solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* position: relative; Required for top to animate */
+  animation-name: slideEffect;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: running; 
+  animation-timing-function:ease-in-out;
+
+
+}
+
+/* @keyframes slideEffect {
+  from {
+    transform:translate(0px);
+  }
+  to{
+    transform:translate(100px);
+     
+  }
+
+} */
+
+@keyframes slideEffect {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(500%); 
+  }
+  /* from {
+    transform: translateX(1000%);  */
+  }
